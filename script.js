@@ -3,6 +3,12 @@ const compute = (e) => {
     const p = document.getElementById("principal").value
     const r = document.getElementById("rate").value/1000
     const y = document.getElementById("years").value
+
+    if(p < 1) {
+        alert("Enter a positive number")
+        p.focus()
+        return false
+    }
     
     const interest = (parseInt(p) * (1 + (parseFloat(r) * parseInt(y)))) - parseInt(p)
 
@@ -17,7 +23,7 @@ const compute = (e) => {
 
 const compute_rate = (perc) => {
     const rate = document.getElementById("range-value")
-    rate.innerHTML = "" + perc/10 + "%"
+    rate.innerHTML = "" + Math.round((perc/10) * 100) / 100 + "%"
 }
 
 const validate_amount = () => {
