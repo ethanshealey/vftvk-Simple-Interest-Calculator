@@ -1,4 +1,33 @@
-body {background-color:tan;}
-h1{color:green;}
-
-
+body {
+    background-color:black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    color:#808080;
+}
+.wrapper {
+    background-color: #fff;
+    width: 50vw;
+    height: auto;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    left: 25vw;
+    position: absolute;
+    top: 30vh;
+}
+label {
+    line-height: 26px;
+    margin-bottom: 10px;
+}  
+input {
+    height: 20px;
+    flex: 0 0 200px;
+    margin-left: 10px;
+}
+#result p {
+    margin-bottom: -10px;
+}
+.highlight {
+    background-color: yellow;
+}
