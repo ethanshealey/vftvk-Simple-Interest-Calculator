@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <title>Web App – Simple Interest Calculator</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="wrapper">
@@ -14,11 +15,23 @@
                 </label>
                 <br />
                 <label>
-                    Interest Rate <input type="range" min="10" max="1000" onchange="compute_rate(this.value)" id="rate"><span id="range-value" style="position: absolute">50%</span>
+                    Interest Rate <input type="range" min="10" step=".1" max="200" onchange="compute_rate(this.value)" id="rate"><span id="range-value" style="position: absolute">10%</span>
                 </label>
                 <br />
                 <label>
-                    No. of Years <input type="number" onchange="validate_years()" id="years">
+                    No. of Years 
+                        <select id="years">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
                 </label>
                 <br/>
                 <br/>
